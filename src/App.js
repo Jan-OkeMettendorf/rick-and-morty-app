@@ -1,25 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from "./components/Header";
+import Navigation from "./components/Navigation";
+import CharacterCard from "./components/CharacterCard";
+
+import RickAndMorty from './components/characters.json';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    const characters = RickAndMorty.results
+
+    return (
+        <>
+            <div>
+                <Header title="my fancy otter gallery"/>
+                <Navigation/>
+                <CharacterCard character={characters[0]}/>
+                <CharacterCard character={characters[1]}/>
+                <CharacterCard character={characters[2]}/>
+                <CharacterCard character={characters[3]}/>
+            </div>
+        </>
+    );
 }
 
 export default App;

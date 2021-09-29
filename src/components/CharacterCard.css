@@ -1,0 +1,30 @@
+.card{
+    background-color: tan;
+    display: grid;
+    border-style: solid;
+    width: 150px;
+    height: 250px;
+    grid-template-rows: 1fr 1fr 5fr;
+    margin: 15px;
+}
+
+.card__name{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 2px;
+}
+
+.card__species{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 2px;
+
+}
+
+
+.card__logo{
+    width: 135px;
+    margin: 5px;
+}
