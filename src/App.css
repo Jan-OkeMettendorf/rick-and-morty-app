@@ -1,0 +1,9 @@
+.buttonInput{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.searchCharacterName {
+    margin: 0px 5px 0px 5px;
+}
