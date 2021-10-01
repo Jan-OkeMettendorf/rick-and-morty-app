@@ -31,7 +31,7 @@ function App() {
                 <Navigation/>
                 <div className="buttonInput">
                     <button className="buttonSet btn btn-secondary" onClick={showCards} >Show cards</button>
-                    <input className="searchCharacterName" onChange={searchName} />
+                    <input className="searchCharacterName" onChange={searchName} placeholder="search character"/>
                     <button className="buttonClear btn btn-secondary" onClick={clearCards} >Clear!</button>
                 </div>
                 <CharacterGallery characters={characters}/>

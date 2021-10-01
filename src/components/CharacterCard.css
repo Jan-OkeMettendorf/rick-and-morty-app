@@ -1,5 +1,6 @@
 .card{
-    background-color: tan;
+    background-image: url("background2.png");
+    /*background-color: tan;*/
     display: grid;
     border-style: solid;
     width: 150px;
@@ -10,7 +11,7 @@
 }
 
 .card:hover{
-    background-color: aliceblue;
+    background-image: url("background4.png");
 }
 
 .card__name{
